@@ -1,0 +1,105 @@
+* {
+    margin: 0; /*para tirar a barra de rolagem*/
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px;
+}
+
+body {
+    background-color: #09090A;
+    color: white;
+    height: 100vh;
+}
+
+button {
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: 1px solid #8B5CF6;
+    background-color: transparent;
+    color: white;
+
+    display: flex;
+    align-items: center; /*só funciona com o display flex*/
+    gap: 12px; /*espaço entre os elementos*/
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+}
+
+#form-habits {
+    display: flex;
+    padding: 0 48px;
+}
+
+.habits {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+}
+
+.habit { /*estilizando os emojis*/
+    width: 64px;
+    height: 64px;
+
+    font-size: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.days {
+    display: flex;    
+    gap: 48px; /*espaçamento entre as caixas "day"*/
+    margin-left: 32px; /*espaço entre os emojis e a caixa*/
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    gap: 24px; /*espaço entre os inputs*/
+}
+
+.day div{ /*pega a div day*/
+    margin-bottom: 8px; /*para totalizar 32px de espaçamento entre a data e o 1º input*/
+
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    line-height: 125%;
+    color: #A1A1AA;
+
+    text-align: center;
+}
+
+input {
+    appearance: none; /*para tirar a aparência inicial do input*/
+    -webkit-appearance: none; /*para funcionar em outros navegadores*/
+
+    width: 64px;
+    height: 64px;
+
+    border: 2px solid #27272A;
+    border-radius: 8px;
+
+    background: #18181B;
+}
+
+/*Este seletor é chamado de PSEUDO-SELECTOR*/
+input:checked {
+    background: #8B5CF6;
+    border: 2px solid #A78BFA;
+}

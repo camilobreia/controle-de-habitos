@@ -1,2 +1,3 @@
 # controle-de-habitos
- Aplicativo Web - NLW ROCKETSEAT
+ 
+ Aplicativo Web para Controle de Hábitos - desenvolvido no curso NLW - trilha Explore da ROCKETSEAT
