@@ -8,11 +8,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
 
+@media (max-width: 570px) { /*criei uma regra CSS para dispositivos que tem de 0px à 570px de largura*/
+    button div {
+        display: none; /*para sumir a div contendo "registrar meu dia" em dispositivos menores*/
+    }
+}
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 48px;
+
+    width: 100%;
+    position: fixed; /*para deixar o logo Habits e o botão fixos*/
+
+    background-color: #09090A;
 }
 
 body {
@@ -40,7 +51,8 @@ button {
 
 #form-habits {
     display: flex;
-    padding: 0 48px;
+    padding: 182px 48px 48px;
+    width: fit-content; /*serve para encaixar no conteúdo*/
 }
 
 .habits {
@@ -103,3 +115,4 @@ input:checked {
     background: #8B5CF6;
     border: 2px solid #A78BFA;
 }
+
